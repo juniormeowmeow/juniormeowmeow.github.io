@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pathorn Roungtan - JuniorMeowMeow</title>
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    </head>
+    <body>
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+            <iconify-icon icon="ri:sun-fill"></iconify-icon>
+        </button>
+        <main class="max-container">
+            <!-- Links -->
+            <div class="profile-links">
+                <a href="https://github.com/juniormeowmeow" class="link-btn">
+                    <iconify-icon icon="mdi:github" class="link-icon"></iconify-icon>
+                    <span>GitHub</span>
+                </a>
+                <a href="files/resume.pdf" target="_blank" rel="noopener noreferrer" class="link-btn">
+                    <iconify-icon icon="mdi:resume" class="link-icon"></iconify-icon>
+                    <span>Resume</span>
+                </a>
+                <a href="https://www.linkedin.com/in/pathorn-rtn/" class="link-btn">
+                    <iconify-icon icon="mdi:linkedin" class="link-icon"></iconify-icon>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://juniormeowmeow.itch.io/" class="link-btn">
+                    <iconify-icon icon="la:itch-io" class="link-icon"></iconify-icon>
+                    <span>itch.io</span>
+                </a>
+            </div>
+
+            <!-- Banner -->
+            <div class="banner">
+                <img id="profile-pic" src="images/profile.jpg" alt="Profile Picture" class="profile-img" />
+                <div class="banner-content">
+                    <h1>
+                        Pathorn Roungtan
+                        <span id="jmm-name" class="jmm-btn">(Junior<span class="meow-text">MeowMeow</span>)</span>
+                    </h1>
+                    <a href="mailto:pathorn.rtn@gmail.com" class="banner-link">
+                        <iconify-icon icon="material-symbols:mail" class="mail-icon"></iconify-icon>
+                        pathorn.rtn@gmail.com
+                    </a>
+                    <p>4th Year Computer Engineering Student at Chulalongkorn University</p>
+                    <p>
+                        I am a software engineer with experience in designing, developing, maintaining, and deploying
+                        software systems.
+                    </p>
+                    <p>I also develop games as a hobby.</p>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Go</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag tag-alt">PostgreSQL</span>
+                        <span class="skill-tag tag-alt">MongoDB</span>
+                        <span class="skill-tag tag-alt">Docker</span>
+                        <span class="skill-tag tag-alt">Kubernetes</span>
+                        <span class="skill-tag tag-alt">AWS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab-btn active" onclick="loadTab('tabs/experience.html', this)">
+                    <iconify-icon icon="mdi:briefcase-outline" class="tab-btn-icon"></iconify-icon>
+                    <span>Work<br />Experience</span>
+                </button>
+                <button class="tab-btn" onclick="loadTab('tabs/education.html', this)">
+                    <iconify-icon icon="material-symbols:school-outline" class="tab-btn-icon"></iconify-icon>
+                    <span>Education</span>
+                </button>
+
+                <button class="tab-btn" onclick="loadTab('tabs/project.html', this)">
+                    <iconify-icon icon="mdi:folder-multiple-outline" class="tab-btn-icon"></iconify-icon>
+                    <span>Projects</span>
+                </button>
+
+                <button class="tab-btn" onclick="loadTab('tabs/game.html', this)">
+                    <iconify-icon icon="mage:gameboy" class="tab-btn-icon"></iconify-icon>
+                    <span>Games</span>
+                </button>
+
+                <button class="tab-btn" onclick="loadTab('tabs/activity.html', this)">
+                    <iconify-icon icon="material-symbols:star-outline" class="tab-btn-icon"></iconify-icon>
+                    <span>Activities</span>
+                </button>
+            </div>
+
+            <div id="dynamic-content" class="tab-content active">
+                <!-- Tab content will be injected here -->
+            </div>
+        </main>
+    </body>
+</html>
