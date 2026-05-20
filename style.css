@@ -417,6 +417,18 @@ iconify-icon {
     background-color: var(--accent-bg);
 }
 
+.site-footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9em;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+}
+
+.site-footer p {
+    margin-bottom: 0px;
+}
+
 @media (max-width: 600px) {
     .profile-links {
         margin-bottom: 20px;
